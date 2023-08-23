@@ -1,0 +1,110 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin:0;
+}
+
+.navbar{
+   height: 40px;
+   background: rgb(37,139,139);
+   background: linear-gradient(90deg, rgba(37,139,139,1) 14%, rgba(110,144,198,1) 88%);
+   
+   display:flex ;
+   justify-content: space-around;
+   
+}
+
+.image{
+    margin-left: 214px;
+    height: 120px;
+    width: 150px;
+}
+
+.man{
+    width: 110px;
+    height: 124px;
+    float: left;
+    
+}
+.woman{
+
+    width: 170px;
+    height: 124px;
+    float: right;
+}
+
+
+ul{
+    list-style: none;
+    font-family:monospace;
+    display: flex;
+    margin: 10px ;
+    margin-right: 30px;
+    font-size: 15px;
+}
+li a{
+    color: aliceblue;
+    margin: 0 20px;
+    width: 100px;
+    text-decoration: double;
+    padding: 10px;
+}
+.logo{
+    text-align: center;
+    
+    background: rgb(199,248,219);
+    background: linear-gradient(90deg, rgba(199,248,219,1) 14%, rgba(152,190,252,1) 88%);
+    /* box-shadow: 25px 25px 50px 0 white inset, -25px -25px 50px 0 white inset;  */
+}
+
+li a:hover{
+    color: black;
+    background-color: aliceblue;
+    border-radius: 2px;
+    
+}
+
+.Searchbar{
+  position: relative;
+  float: right;
+  height: 30px;
+  right: 10px;
+  top: 130px;
+  border-radius: 5px;
+  border-style: none;
+  padding: 5px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  /*transition: width 2s ease-in;*/
+
+}
+/*.Searchbar:hover{
+    width: 70px;
+}*/
+.s{
+    position: relative;
+    float: right;
+    height: 30px;
+    left: 150px;
+    top: 137px;
+    color: black;
+}
+#profile{
+    position:relative;
+    float: left;
+    top: 137px;
+
+}
+#p:hover{
+    background-color: aliceblue;
+    color: black;
+}
+
+#p{
+    color: aliceblue;
+}
+.titan{
+    overflow-x: hidden;
+}
+#track{
+    
+}
