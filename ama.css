@@ -105,6 +105,21 @@ li a:hover{
 .titan{
     overflow-x: hidden;
 }
-#track{
+.whatsapp{
     
+    height: 28px;
+    position: relative;
+    bottom: 40px;
+    right: 520px;
+
+}
+.text{
+    font-size: 15px;
+    text-decoration: none;
+    position: relative;
+    bottom: 50px;
+    right: 520px;
+    color: black;
+    border: black;
+    font-weight: bold;
 }
