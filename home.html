@@ -7,6 +7,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="ama.css">
     <script src="https://kit.fontawesome.com/f431766bae.js" crossorigin="anonymous"></script>
+   
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
@@ -16,35 +17,76 @@
             <img src="man.png" class="man">
             <img src="woman.png" class="woman">
             <img src="whatsap.png" class="whatsapp">
-            <input type="text" class="Searchbar" placeholder="Search..">
-            <i class="fa-solid fa-magnifying-glass s"></i>
+            
             <a href="https://wa.me/8076594383" class="text">8368649236</a>
         
-            <a id="p"href="profile.html"><i class="fa-solid fa-user fa-lg" id="profile"></i></a>
+            
             
         </div>
+        <div class="mobhead">
+          <div class="mobsubhead">
+            <ul class="mobul">
+            <li><a href="#"><img id="diss" src="logo3.png" class="image"></a></li>
+            <li><input type="text" class="mobbar" placeholder="Search..">
+            <i class="fa-solid fa-magnifying-glass  mobsign"></i></li>
+            <div id="myLinks">
+              <a href="#news">News</a>
+              <a href="#contact">Contact</a>
+              <a href="#about">About</a>
+            </div>
+            <li><a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars hamburger"></i></li>
+            </ul>
+          </div>
+          <hr class="rule">
+          <div class="mobtitan">
+            <img id="mobimage" src="titan.webp">
+          </div>
+          <hr class="rule">
+        </div>
+       
 
         
        
-        <div class="navbar">
+      <div class="navbar">
+
             
-       <ul>
-        <li><a href="barands.html">BRANDS</a></li>
-        <li><a href="men.html">MEN</a></li>
-        <li><a href="women.html">WOMEN</a></li>
-        <li><a href="about.html">ABOUT</a></li>
-        <li><a href="contact.html">CONTACT</a></li>
-   </ul>
+       <ul class="navul">
+        <li><a class="brandbtn desktop" href="barands.html">BRANDS</a></li>
+        <li><a href="men.html" class="desktop">MEN</a></li>
+        <li><a href="women.html" class="desktop">WOMEN</a></li>
+        <li><a href="about.html" class="desktop">ABOUT</a></li>
+        <li><a href="contact.html" class="desktop">CONTACT</a></li>
+        <li><input type="text" class="Searchbar" placeholder="Search..">
+        <li><i class="fa-solid fa-magnifying-glass sign"></i></li>
+       </ul>
     </div>
     <div class="titan">
-        <img src="titan.webp">
+        <img id="image" src="titan.webp">
+        
     </div>
-    <div class="buttons">
-        <button type="button" id="track">Track Your Order</button>
-        <button type="button" id="contact">Contact Us</button>
+    
 
     </div>
 
     </section>
 </body>
 </html>
+<script>const imageUrls = ['apple.jpg', 'watch.webp', 'titan.webp']; 
+ 
+    let index = 0; 
+    function changeImage() { 
+      document.getElementById('image').src = imageUrls[index]; 
+      index = (index + 1) % imageUrls.length;
+      document.getElementById('mobimage').src = imageUrls[index]; 
+      index = (index + 1) % imageUrls.length; 
+    } 
+   
+    setInterval(changeImage, 3000); 
+    function myFunction() {
+  var x = document.getElementById("myLinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}</script>
